@@ -1,0 +1,54 @@
+{
+  "compiler": {
+    "version": "0.8.16+commit.07a7930e"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [],
+    "devdoc": {
+      "author": "Brecht Devos - <brecht@loopring.org>",
+      "kind": "dev",
+      "methods": {},
+      "title": "Base64",
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {},
+      "notice": "Provides a function for encoding some bytes in base64",
+      "version": 1
+    }
+  },
+  "settings": {
+    "compilationTarget": {
+      "src/Base64.sol": "Base64"
+    },
+    "evmVersion": "london",
+    "libraries": {},
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "remappings": [
+      ":ds-test/=lib/ds-test/src/",
+      ":forge-std/=lib/forge-std/src/",
+      ":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+      ":solmate/=lib/solmate/src/",
+      ":weird-erc20/=lib/solmate/lib/weird-erc20/src/"
+    ]
+  },
+  "sources": {
+    "src/Base64.sol": {
+      "keccak256": "0x7f0332dd9dcbe25f024cb0ca7a1aeeae06835a41d195ec5a94f359a310f45e1c",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://89e2dda4fee463d228738fff82bc427cd73cb9386d51d7ba34b14d4b4b3049a6",
+        "dweb:/ipfs/QmQUEkUjWQ9A8DcwofT8vvy82gZhpaXt6e9rkUR1ArG8Yu"
+      ]
+    }
+  },
+  "version": 1
+}
