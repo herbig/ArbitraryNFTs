@@ -21,8 +21,8 @@ contract ContractTest is DSTest, ArbitraryNFT {
 
     constructor() ArbitraryNFT("TestCollection", "TSTC", "NFT #1", "A description", "https://i.imgur.com/FjvC1fc.jpeg", alice) {}
 
-    function stringCompare(string memory str1, string memory str2) internal returns (bool) {
-        return keccak256(bytes(str1)) == keccak256(bytes(str2));
+    function stringCompare(string memory str1, string memory str2) internal pure returns (bool) {
+        return keccak256(abi.encodePacked(str1)) == keccak256(abi.encodePacked((str2)));
     }
 
     function setUp() public {
@@ -97,12 +97,6 @@ contract ContractTest is DSTest, ArbitraryNFT {
         this.burn();
         
         // TODO probably a better way to test this
-        assertTrue(owner() == alice && owner() == bob);
-        assertTrue(balanceOf(alice) == 0 && balanceOf(bob) == 0);
-        assertTrue(stringCompare(name(), ""));
-        assertTrue(stringCompare(symbol(), ""));
-        assertTrue(stringCompare(tokenName, ""));
-        assertTrue(stringCompare(tokenDescription, ""));
-        assertTrue(stringCompare(tokenImage, ""));
+        assertTrue(false);
     }
 }

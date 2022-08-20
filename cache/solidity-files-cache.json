@@ -591,8 +591,8 @@
       }
     },
     "src/test/ArbitraryNFT.t.sol": {
-      "lastModificationDate": 1660938931364,
-      "contentHash": "5dc33f521a6d794f29a981cc46a15d64",
+      "lastModificationDate": 1660960752070,
+      "contentHash": "c9231ff6530e13290b55237b7352e980",
       "sourceName": "src/test/ArbitraryNFT.t.sol",
       "solcConfig": {
         "settings": {
